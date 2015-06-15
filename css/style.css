@@ -12,6 +12,11 @@ body {
 .header {
 	margin-bottom:100px;
 }
+span {
+	color:white;
+	font-size:23px;
+
+}
 h1{
 	color:white;
 	text-align:center;
@@ -21,6 +26,7 @@ h3 {
 	color:white;
 	text-align:center;
 	margin-top: 30px;
+	font-weight:lighter;
 }
 #content {
 	height:300px;
@@ -43,12 +49,19 @@ h2 {
 	margin-bottom: 10px;
 	border-radius:25px;
 
-	
 }
-.list > .t1,.t2,.t3,.t4 > p {
+ p {
 	text-align:center;
 	font-size:18px;
 	font-weight:100;
+}
+[type=text] {
+	background: #6A8D9D;
+	border:0;
+	height:30px;
+	width:300px;
+	font-size: 18px;
+	display:none;
 }
 
 .reset {
@@ -62,7 +75,7 @@ h2 {
 	border: 0px;
 	font-weight:100;
 }
-.ticks {
+.ticks1,.ticks2,.ticks3,.ticks4 {
 	padding: 10px;
 	float:right;
 	margin-right:-440px;
@@ -71,7 +84,7 @@ h2 {
 	border: 0px;
 	color:white;
 }
-.trash {
+.trash1,.trash2 ,.trash3 ,.trash4 {
 margin-top:5px;
 margin-left:120px;
 float:left;
