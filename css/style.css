@@ -2,13 +2,18 @@ body {
 	font-family: 'Roboto Slab', serif;
 	background:#466675;
 	color:white;
+	margin:0;
+	padding:0;
 	} 
 .header {
 	height:100px;
-	width:950px;
 	padding:0;
-	margin: 0;
+	margin: 0 auto;
+	text-align:center;
 }
+.f {
+	color:black;
+} 
 .header {
 	margin-bottom:100px;
 }
@@ -29,8 +34,7 @@ h3 {
 	font-weight:lighter;
 }
 #content {
-	height:300px;
-	width:400px;
+	width:90%;
 	padding:0;
 	margin: 0;
 	clear:both;
@@ -40,33 +44,37 @@ h2 {
 	color:grey;
 	margin: 0;
 }
-.list > .t1,.t2,.t3,.t4 {
+.list > .t,.t1 {
 	height:50px;
 	width:750px;
 	border: 2px solid black;
-	background:#6A8D9D;
-	margin-left: 100px;
+	margin: 0 auto;
 	margin-bottom: 10px;
 	border-radius:25px;
+	position:relative;
 
 }
+
  p {
 	text-align:center;
 	font-size:18px;
 	font-weight:100;
+ 	font-size: 18px;
 }
-.i1,.i2,.i3,.i4 {
-	background: #6A8D9D;
-	border:0;
-	height:40px;
-	width:600px;
-	font-size: 18px;
+.hidden {
+	width:60%;
+	background:transparent;
+	height:50px;
+	font-size:2em;
+	color:white;
+	margin-left:100px;
+	border:none;
 }
 
 .reset {
 	margin-left:100px;
 	margin-bottom:20px;
-	background:#6A8D9D;
+	background:#466675;
 	border-radius:25px;
 	color:white;
 	padding:15px;
@@ -74,32 +82,52 @@ h2 {
 	border: 0px;
 	font-weight:100;
 }
-.ticks1,.ticks2,.ticks3,.ticks4 {
+.refresh {
+	font-size:20px;
+
+}
+.ticks{
 	padding: 10px;
+	position:relative;
+	margin-top:-60px;
+	margin-right:110px;
 	float:right;
-	margin-right:-440px;
-	margin-top:5px;
-	background:#6A8D9D;
+	background:transparent;
 	border: 0px;
 	color:white;
 }
-.trash1,.trash2 ,.trash3 ,.trash4 {
+.trash{
 margin-top:5px;
-margin-left:120px;
+margin-left:10px;
 float:left;
 padding:10px;
 border: 0px;
-background:#6A8D9D;
+background:#466675;
 color:white;
+position:relative;
 }
+input {
+	color:red;
+	font-size:1;
+}
+.empty {
+	display:none;
+	height:50px;
+	width:750px;
+	border: 2px solid black;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius:25px;
+	position:relative;
+	margin-left:60px;
+}
+
 footer {
 	background:#263945;
-	width:950px;
 	height:100px;
 	margin-top:200px;
 	color:#263945;
 }
-
 
 /*.sidebar {
 	height:400px;

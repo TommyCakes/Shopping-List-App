@@ -11,54 +11,59 @@
 </head>
 <body>
 
-<div class="header">
+<header class="header">
 	<img class="logo">
 	<h1> Welcome to <span>i</span>Shop! </h1>
 	<h3> Created by Tom Warhurst</3>
 		<i class="fa fa-shopping-cart fa-lg"></i>
-</div>
+</header>
 
 <div id="content">
 	
 	<!--<h2> Amount </h2>
 	<h2> Price </h2> -->
 <button class="reset"> <FORM>
-<INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+<input class="refresh" type="button" onClick="history.go(0)" VALUE="Reset">
 </FORM></button>
 
+
 	<div class="list">
-		<button class="ticks1"><i class="fa fa-check fa-2x"></i>
-		</button>
-		<button class="trash1"> <i class="fa fa-trash fa-2x"></i></button>
-			<div class="t1">
+	
+		<button class="trash"> <i class="fa fa-trash fa-2x"></i></button>
+			<div class="t">
+				
 				<p>Please choose your item</p>
-				<input class="i1" type="text" >
+				<input class="hidden" type="text" >
 			</div>
-		<button class="ticks2"><i class="fa fa-check fa-2x"></i>
+			<button class="ticks"><i class="fa fa-check fa-2x"></i>
 		</button>
-		<button class="trash2"> <i class="fa fa-trash fa-2x"></i></button> 
-			<div class="t2">
-				<p> Click the trash icon to delete item </p>
-			<input class="i2" type="text">
+		<button class="trash"> <i class="fa fa-trash fa-2x"></i></button> 
+			<div class="t">
+				<p > Click the trash icon to delete item 
+				</p>
+			<input class="hidden" type="text">
 			</div>
-			<button class="ticks3"><i class="fa fa-check fa-2x"></i>
+			<button class="ticks"><i class="fa fa-check fa-2x"></i>
 		</button>
-		<button class="trash3"> <i class="fa fa-trash fa-2x"></i></button>
-			<div class="t3">
+		<button class="trash"> <i class="fa fa-trash fa-2x"></i></button>
+			<div class="t">
 				<p> Click the tick to confirm item </p>
-			<input class="i3" type="text">
+			<input class="hidden" type="text">
 			</div>
-			<button class="ticks4"><i class="fa fa-check fa-2x"></i>
+			<button class="ticks"><i class="fa fa-check fa-2x"></i>
 		</button>
-		<button class="trash4"> <i class="fa fa-trash fa-2x"></i></button>
-			<div class="t4"> 
-				<p>Click reset to start again</p>
-			<input class="i4"type="text">
+		<button class="trash"> <i class="fa fa-trash fa-2x"></i></button>
+			<div class="t1"> 
+			<input class="hidden"type="text">
 			</div>
+				<button class="ticks"><i class="fa fa-check fa-2x"></i>
+		</button>
 		</div>
-		<footer>
-			FOOTER
-		</footer>
+	</div>
+
+
+
+	
  
 
 <!--<<div id="buttons-down">
