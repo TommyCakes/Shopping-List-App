@@ -4,18 +4,19 @@ body {
 	color:white;
 	margin:0;
 	padding:0;
+	max-width:960px;
 	} 
 .header {
-	height:100px;
+	width:960px;
 	padding:0;
 	margin: 0 auto;
 	text-align:center;
+	background:#8aaab9;
+	margin-bottom:100px;
+
 }
 .f {
 	color:black;
-} 
-.header {
-	margin-bottom:100px;
 }
 span {
 	color:white;
@@ -30,13 +31,13 @@ h1{
 h3 {
 	color:white;
 	text-align:center;
-	margin-top: 30px;
+	margin-top: 10px;
 	font-weight:lighter;
 }
 #content {
 	width:90%;
 	padding:0;
-	margin: 0;
+	margin: 0 auto;
 	clear:both;
 }
 h2 {
@@ -59,7 +60,6 @@ h2 {
 	text-align:center;
 	font-size:18px;
 	font-weight:100;
- 	font-size: 18px;
 }
 .hidden {
 	width:60%;
@@ -72,29 +72,27 @@ h2 {
 }
 
 .reset {
-	margin-left:100px;
-	margin-bottom:20px;
+	margin-right:100px;
+	position:relative;
 	background:#466675;
 	border-radius:25px;
 	color:white;
+	float:right;
 	padding:15px;
-	width:100px;
-	border: 0px;
+	width:10%;
 	font-weight:100;
-}
-.refresh {
-	font-size:20px;
 
 }
 .ticks{
 	padding: 10px;
 	position:relative;
 	margin-top:-60px;
-	margin-right:110px;
+	margin-right:10px;
 	float:right;
 	background:transparent;
 	border: 0px;
 	color:white;
+	position:relative;
 }
 .trash{
 margin-top:5px;
@@ -105,21 +103,21 @@ border: 0px;
 background:#466675;
 color:white;
 position:relative;
+
 }
-input {
-	color:red;
-	font-size:1;
-}
-.empty {
-	display:none;
+#new {
+	
+	width:60%;
 	height:50px;
-	width:750px;
 	border: 2px solid black;
-	margin: 0 auto;
-	margin-bottom: 10px;
+	margin-left:160px;
 	border-radius:25px;
+	text-align:center;
 	position:relative;
-	margin-left:60px;
+	margin-bottom:30px;
+	font-size:16px;
+	font-weight:100;
+
 }
 
 footer {
@@ -127,6 +125,9 @@ footer {
 	height:100px;
 	margin-top:200px;
 	color:#263945;
+}
+.test {
+	text-decoration: line-through;
 }
 
 /*.sidebar {

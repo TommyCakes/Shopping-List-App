@@ -1,36 +1,35 @@
-$(document).ready(function() {
+$(document).on('ready', function() {
 	//Trash icon now deletes text bar.//
-$('.ticks').on('click' ,function(){
-		$('p').next(this).css("text-decoration", "line-through");
-		
-	});
 
-$(".trash").on('click', function() {
-	$(this).next('.t,.t1').remove();
-$(this).next('.ticks').remove();
-$(this).remove()
+$('.list').on('click','.trash', function () {
+	$(this).next('.t').remove();
+	$(this).next('.ticks').remove();
+	$(this).remove()
+});
+$('.list').on('click','.ticks', function(){
+		//$(this).prev().children().first().css("text-decoration", "line-through");
+		$(this).prev().children().first().toggleClass('test');
 
-	});
-	$('body').on('keydown', function(e){
+});
+
+	
+	$('#new').on('keydown', function(e){
 		if(e.which == 13) {
-		$('.empty').show();	
-		$(this).after("<div class='empty'>" +  "</div>");
+		//$('.empty').show();	
+		//$(this).after("<div class='empty'>" +  "</div>");
+		var newItem = $('#new').val();
+		$('.list').prepend('<button class="trash"> <i class="fa fa-trash fa-2x"></i></button><div class="t"><p>' + newItem + '</p><input class="hidden" type="text" ></div><button class="ticks"><i class="fa fa-check fa-2x"></i></button>');
+		return $('#new').val('')
 	}
 	else {
 		return
 	}
 
 });
-	$(".t").click(function() {
-		$('p').hide();
-		$('.hidden').show();
-
+	//$(".t").on('click', function() {
+	//	$('p').hide();
+	//	$('.hidden').show();
 });
-});
-
-
-	
-
 
 //$(".ticks").on('click',function() {
 		//console.log(this)
